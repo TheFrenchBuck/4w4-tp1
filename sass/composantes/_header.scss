@@ -10,8 +10,22 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    //row-gap: 1100px;
+    padding-left: 10px;
+    .site__header__titre{
+      display: flex;
+      flex-direction: row;
+      
+      justify-content: space-between;
+      align-items: center;
+    }
+   
+      
+    
+
   }
-  &__titre{
+
+  &header__titre{
      font-size: clamp(3rem, 1vw, 6rem);
     display: flex;
     align-items: center;
@@ -27,7 +41,7 @@
       display: flex;
       justify-content: center;
       // margin: auto;
-      padding: 0;
+      // padding: 0;
       
       
       }
@@ -51,13 +65,19 @@
 .header__titre {
      font-size: clamp(1.5rem, 1vw, 6rem);
     font-family: $font__titre;
+    @media screen and (max-width:700px){
+      // margin: 50px;
+    }
 
    
 }
 .header__description {
-    font-size: clamp(1.5rem, 1vw, 6rem);
+    font-size: clamp(0.8rem, 1vw, 6rem);
     font-family: $font__main;
-    padding-right: 20px;
+    margin-left: 10px;
+    @media screen and (min-width:700px){
+      margin: 10px;
+    }
 }
 
 .util {

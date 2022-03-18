@@ -8,16 +8,22 @@
 #chk-burger {
     display : none;
 }
-.menu-principale-container{
-    display: none;
-}
+// .menu-principale-container{
+//     display: none;
+// }
 #chk-burger:checked ~ #burger {
     transform : rotate(90deg);
 }
-
+.menu-principale-container {
+    display : none;
+}
 #chk-burger:checked ~ .menu-principale-container {
     display : block;
+
+
 }
+
+
 
 
 .menu-principale-container{
@@ -48,16 +54,27 @@
    .site #burger {
         display : none;
     }
-    .site .menu-principal-container {
+    .site .menu-principale-container {
         display : block;
     }
 
-    .home #burger {
-        display : block;
+     
+        .home #burger {
+            display : block;
+        }
+        .home .menu-principale-container {
+            display : none;
+        }
+        .home #chk-burger:checked ~ .menu-principale-container {
+            display : block;
+        
+
     }
-   .home .menu-principal-container {
-        display : none;
-    }
+    
+    
+    
+    
+    
 
 
     
