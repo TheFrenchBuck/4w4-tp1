@@ -764,9 +764,9 @@ COMPOSANTES
 .recherche__text {
   border: none;
   outline: none;
-  background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color .5s;
   width: 100%;
+  background-color: #c7c7c7;
+  animation: zoneRecherche 5s infinite;
 }
 
 .recherche__text:focus {
@@ -865,6 +865,23 @@ ANIMATION
   }
   100% {
     background-color: #1161f7;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoneRecherche {
+  0% {
+    transform: translateY(2px);
+    background-color: #d8d8d8;
+  }
+  10% {
+    background-color: #908bbb;
+  }
+  90% {
+    background-color: #979797;
+  }
+  100% {
+    background-color: #383838;
     transform: translateY(0);
   }
 }

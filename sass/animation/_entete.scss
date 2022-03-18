@@ -67,18 +67,19 @@
 }
 @keyframes zoneRecherche {
     0% {
-        transform : translateY(-100vh);
-        background-color: lightsteelblue;  
+        transform : translateY(2px);
+        background-color:rgba($color: #d8d8d8, $alpha: 1.0);
+         
     }
     10% {
-        background-color:blue ;  
+        background-color: rgba($color: #908bbb, $alpha: 1.0);    
     }
     
     90% {
-        background-color:cyan ;  
+        background-color: rgba($color: #979797, $alpha: 1.0);    
     }
     100% {
-        background-color: rgb(17, 97, 247);  
+        background-color:rgba($color: #383838, $alpha: 1.0);
         transform : translateY(0);  
     }
 
