@@ -2,7 +2,7 @@
 <div class="site__footer__colonne">
     <section class="footer__adresse"><?php get_sidebar( 'pied_page_colonne_1' ); ?></section>
     <section class="footer__article"><?php get_sidebar( 'pied_page_colonne_2' ); ?></section>
-    <section class="footer__lien"><?php wp_nav_menu(array("menu"=>"lien_externe")); ?></section>
+    <section class="footer__lien"><?php wp_nav_menu(array("menu"=>"lien_externe")); ?><?php get_sidebar( 'pied_page_colonne_3' );?></section>
 </div>
 <div class="site__footer__ligne">
     <section class="footer__description">4w4-Conception d'interface et développement Web</section>
