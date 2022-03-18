@@ -486,6 +486,7 @@ COMPOSANTES
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  padding-left: 32px;
 }
 
 @media screen and (min-width: 700px) {
@@ -528,6 +529,12 @@ COMPOSANTES
 .header__titre {
   font-size: clamp(1.5rem, 1vw, 6rem);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+@media screen and (min-width: 700px) {
+  .header__titre {
+    margin: 50px;
+  }
 }
 
 .header__description {
@@ -576,6 +583,7 @@ COMPOSANTES
   position: absolute;
   transition: transform .3s;
   transform: rotate(0);
+  z-index: 1;
 }
 
 #chk-burger {
@@ -592,11 +600,14 @@ COMPOSANTES
 
 #chk-burger:checked ~ .menu-principale-container {
   display: block;
+  transform: scale(1);
 }
 
 .menu-principale-container {
   padding: 30px 0 0 0;
   background-color: #8293e3;
+  transition: transform 2s;
+  transform: scale(0);
 }
 
 .menu-principale-container .menu {
@@ -628,6 +639,7 @@ COMPOSANTES
   }
   .home #burger {
     display: block;
+    z-index: 1;
   }
   .home .menu-principale-container {
     display: none;
@@ -668,7 +680,12 @@ COMPOSANTES
 }
 
 .site__footer__colonne .footer__adresse #pied_page_colonne_1 {
-  width: 10vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.site__footer__colonne .footer__adresse #pied_page_colonne_1 #block-7, .site__footer__colonne .footer__adresse #pied_page_colonne_1 #block-10 {
+  width: 70px;
 }
 
 .site__footer__colonne .footer__article {
@@ -840,8 +857,19 @@ ANIMATION
 @keyframes anim-entete {
   0% {
     transform: translateY(-100vh);
+    background-color: lightsteelblue;
+  }
+  25% {
+    background-color: blue;
+  }
+  30% {
+    background-color: aquamarine;
+  }
+  78% {
+    background-color: cyan;
   }
   100% {
+    background-color: #1161f7;
     transform: translateY(0);
   }
 }
@@ -851,8 +879,8 @@ ANIMATION
   animation: animHotel 3s infinite;
 }
 
-#block-15 li {
-  animation: animAvion 3s infinite;
+#block-15 :nth-child(2) {
+  animation: facebook 3s infinite;
 }
 
 /* Animation Hotel*/
@@ -866,7 +894,7 @@ ANIMATION
   }
 }
 
-@keyframes animAvion {
+@keyframes facebook {
   from {
     transform: translateY(-5vh) scale(0.9, 1.1);
     animation-timing-function: cubic-bezier(0.725, 0, 1, 0.685);

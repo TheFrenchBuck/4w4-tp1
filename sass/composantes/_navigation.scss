@@ -3,6 +3,7 @@
     position : absolute;
     transition : transform .3s;
     transform : rotate(0);
+    z-index: 1;
 }
 
 #chk-burger {
@@ -16,9 +17,11 @@
 }
 .menu-principale-container {
     display : none;
+    
 }
 #chk-burger:checked ~ .menu-principale-container {
     display : block;
+    transform:scale(1);
 
 
 }
@@ -29,6 +32,9 @@
 .menu-principale-container{
     padding :30px 0 0 0;
     background-color: $color__background-link;
+    transition: transform 2s;
+    transform: scale(0);
+    
 
     .menu{
         list-style-type: none;
@@ -57,19 +63,26 @@
     .site .menu-principale-container {
         display : block;
     }
-
+       
      
         .home #burger {
             display : block;
+            
+            z-index: 1;
         }
         .home .menu-principale-container {
             display : none;
+            
         }
         .home #chk-burger:checked ~ .menu-principale-container {
             display : block;
+            
+            
         
 
     }
+    
+
     
     
     

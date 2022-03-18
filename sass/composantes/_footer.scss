@@ -28,10 +28,21 @@
         padding-left: 12px;
         padding-right: 12px;
         #pied_page_colonne_1{
-          width: 10vw;
+          display: flex;
+          flex-direction: column;
+
+          #block-7,#block-10{
+            width: 70px;
+          }
+          
           
          
+           
+           
+
+         
         }
+        
         
       }
 

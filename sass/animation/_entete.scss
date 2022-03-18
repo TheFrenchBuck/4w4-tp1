@@ -44,11 +44,24 @@
     
 }
 
+
 @keyframes anim-entete {
     0% {
-      transform : translateY(-100vh);  
+        transform : translateY(-100vh);
+        background-color: lightsteelblue;  
+    }
+    25% {
+        background-color:blue ;  
+    }
+    30% {
+        background-color:aquamarine;  
+    }
+    78% {
+        background-color:cyan ;  
     }
     100% {
+        background-color: rgb(17, 97, 247);  
         transform : translateY(0);  
     }
+
 }
