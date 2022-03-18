@@ -1,4 +1,8 @@
 .site__header {
+  .recherche__texte{
+    background-color: rgba($color: #d1d1d1a2, $alpha: 1.0);
+    animation-name: zoneRecherche;
+  }
   background-color: $color__background-header;
   color: $color__font-header;
   padding-left: 10px;

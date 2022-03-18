@@ -65,3 +65,21 @@
     }
 
 }
+@keyframes zoneRecherche {
+    0% {
+        transform : translateY(-100vh);
+        background-color: lightsteelblue;  
+    }
+    10% {
+        background-color:blue ;  
+    }
+    
+    90% {
+        background-color:cyan ;  
+    }
+    100% {
+        background-color: rgb(17, 97, 247);  
+        transform : translateY(0);  
+    }
+
+}
