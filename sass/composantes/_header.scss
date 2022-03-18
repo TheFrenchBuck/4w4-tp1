@@ -17,7 +17,7 @@
     .site__header__titre{
       display: flex;
       flex-direction: row;
-      
+    
       justify-content: space-between;
       align-items: center;
       
@@ -29,13 +29,17 @@
   }
 
   &header__titre{
-     font-size: clamp(3rem, 1vw, 6rem);
+     font-size: clamp(10rem, 5vw, 6rem);
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
+    font-family: $font__titre;
     // flex-direction: row;
     margin-left: 10px;
+    @media screen and (min-width:700px){
+      margin: 50px;
+    }
   
 
     .logo__titre{
@@ -66,15 +70,7 @@
 .custom-logo-link, .header__titre,.header__description {
 
 }
-.header__titre {
-     font-size: clamp(1.5rem, 1vw, 6rem);
-    font-family: $font__titre;
-    @media screen and (min-width:700px){
-      margin: 50px;
-    }
 
-   
-}
 .header__description {
     font-size: clamp(0.8rem, 1vw, 6rem);
     font-family: $font__main;
