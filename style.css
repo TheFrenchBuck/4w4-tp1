@@ -728,23 +728,6 @@ COMPOSANTES
   color: #19e123;
 }
 
-/*
-
-.site__footer {
-    font-family: $font__titre;
-    background-color: $color__background-footer;
-    padding: 15px;
-
-
-  }
-
-.footer__titre,
-.footer__presentation,
-.footer__author {
-  color: $color__font-footer;
-  text-align: center;
-}
-*/
 .erreur-404 {
   background-color: #b95f85;
 }
