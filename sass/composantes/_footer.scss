@@ -14,7 +14,8 @@
     section{ // .site__footer__colonne section
       display: flex;
       flex-direction: column;
-      border : 1px solid #aaa;
+      //border : 1px solid #aaa;
+      background-color: rgba(97, 97, 97, 0.829);
       flex : 0 0 30%;
       width: 20vw;
       padding-top: 10px ;
