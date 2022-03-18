@@ -766,7 +766,7 @@ COMPOSANTES
   outline: none;
   width: 100%;
   background-color: #c7c7c7;
-  animation: zoneRecherche 5s infinite;
+  animation: zoneRecherche 2s infinite;
 }
 
 .recherche__text:focus {
