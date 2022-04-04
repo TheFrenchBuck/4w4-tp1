@@ -26,17 +26,19 @@ INITIALISATION
 ÉLÉMENTS
 --------------------------------------------------------- */
 @import "elements/links";
-
+@import "elements/balises";
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
 @import "composantes/contenu";
 @import "composantes/header";
 @import "composantes/navigation";
+@import "composantes/navigation_accueil";
 @import "composantes/footer";
 @import "composantes/erreur_404";
 @import "composantes/recherche";
 @import "composantes/single-post";
+@import "composantes/navigation_categorie_cours";
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
