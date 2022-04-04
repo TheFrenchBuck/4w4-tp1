@@ -1,6 +1,6 @@
 <?php get_header() ?>
 <main class="principal">
-    <h1>------ category.php groupe-1-----------</h1>
+    <h1>Programme TIM</h1>
     <section class="formation">
     <?php  wp_nav_menu(array(
             "menu"=>"categorie_cours",
@@ -22,7 +22,7 @@
         if (is_category('video')){ echo "<h3>Cours vidéo</h3>";}
         */
         // retourne un string qui représente le slug de la catégorie
-        $url_categorie_slug = trouve_la_categorie(array('cours','web','jeu','design', 'utilitaire', 'creation-3d', 'video'));
+        $url_categorie_slug = trouve_la_categorie(array('cours','web','jeux-video','creation-video','autres'));
         $ma_categorie = get_category_by_slug($url_categorie_slug);
         echo "<h3>" . $ma_categorie->description . "</h3>"; 
 
