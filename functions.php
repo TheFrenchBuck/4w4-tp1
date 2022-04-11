@@ -10,6 +10,10 @@ function cidw_4w4_register_nav_menu(){
         'menu_principal' => __( 'Menu principal', 'cidw_4w4' ),
         'menu_footer'  => __( 'Menu footer', 'cidw_4w4' ),
         'menu_lien_externe'  => __( 'Menu lien externe', 'cidw_4w4' ),
+        'menu_cours' => __('Menu categories cours', 'cidw_4w4'),
+        'menu_accueil' => __('Menu accueil', 'cidw_4w4')
+
+
     ) );
 }
 add_action( 'after_setup_theme', 'cidw_4w4_register_nav_menu', 0 );
@@ -39,7 +43,15 @@ function cidw_4w4_add_theme_support()
 
 add_action( 'after_setup_theme', 'cidw_4w4_add_theme_support' );
 
-
+/* ----------------------------------------------------------- Ajout de la description dans menu */
+function prefix_nav_description( $item_output, $item,  $args ) {
+    if ( !empty( $item->description ) ) {
+        $item_output = str_replace( $args->link_after . '</a>',
+        $args->link_after .'<hr><span class="menu-item-description">' . $item->description . '</span>' .  '</a>',
+              $item_output );
+    }
+    return $item_output;
+}
 /*---------------------------------------------------------- Enregistrement des sidebar */
 function my_register_sidebars() {
     /* Register the 'primary' sidebar. */
@@ -104,4 +116,10 @@ function my_register_sidebars() {
 /* Repeat register_sidebar() code for additional sidebars. */
 
 add_action( 'widgets_init', 'my_register_sidebars' );
+
+function trouve_la_categorie($tableau){
+    foreach($tableau as $cle){
+        if(is_category($cle)) return($cle);
+    }
+}
 ?>

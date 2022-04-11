@@ -20,9 +20,30 @@
     &__liste {
         display: flex;
         flex-wrap: wrap;
+
+        .web{
+            background-image: url('https://s2.svgbox.net/octicons.svg?ic=globe-bold');
+        }
+        .jeux-video{
+            background-image: url('https://s2.svgbox.net/materialui.svg?ic=games');
+            
+        }
+        
+        .utilitaire{
+            //background-image: url('https://s2.svgbox.net/octicons.svg?ic=device-camera-video');
+
+            background-image: url('https://s2.svgbox.net/octicons.svg?ic=tools-bold');
+        }
+        .creation-video {
+            background-image: url('https://s2.svgbox.net/octicons.svg?ic=device-camera-video');
+            
+        }
+        
     }
     
     &__cours {
+        background-repeat: no-repeat;
+        background-position: 95% 5% ;
         background-color: $color__background-cours;
         box-shadow: rgb(57, 64, 68) 1px -1px 10px;
         border-radius: 5px;

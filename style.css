@@ -2,7 +2,7 @@
 /*
 theme name: ZachLetp1
 Author: Zachary Arsenault
-Author URI: https://github.com/TheFrenchBuck
+Author URI: https://github.com/TheFrenchBuck/4w4-tp1.git
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -433,7 +433,25 @@ COMPOSANTES
   flex-wrap: wrap;
 }
 
+.formation__liste .web {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=globe-bold");
+}
+
+.formation__liste .jeux-video {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=games");
+}
+
+.formation__liste .utilitaire {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools-bold");
+}
+
+.formation__liste .creation-video {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=device-camera-video");
+}
+
 .formation__cours {
+  background-repeat: no-repeat;
+  background-position: 95% 5%;
   background-color: #d1e9ff;
   box-shadow: #394044 1px -1px 10px;
   border-radius: 5px;
@@ -641,6 +659,32 @@ COMPOSANTES
   .home #chk-burger:checked ~ .menu-principale-container {
     display: block;
   }
+}
+
+/* --------------------------------------------------------------
+Navigation pour la page category.php   boutons de catégorie  groupe-1
+----------------------------------------------------------------- */
+.menu-categorie_cours-container .menu {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.menu-categorie_cours-container .menu .menu-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px 15px 0;
+  background-color: lightgray;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 65px;
+}
+
+.menu-categorie_cours-container .menu .menu-item a {
+  text-decoration: none;
+  margin: 10px;
 }
 
 .site__footer {

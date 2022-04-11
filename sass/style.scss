@@ -1,7 +1,7 @@
 /*
 theme name: ZachLetp1
 Author: Zachary Arsenault
-Author URI: https://github.com/TheFrenchBuck
+Author URI: https://github.com/TheFrenchBuck/4w4-tp1.git
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -26,17 +26,20 @@ INITIALISATION
 ÉLÉMENTS
 --------------------------------------------------------- */
 @import "elements/links";
-
+//@import "elements/balises";
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
 @import "composantes/contenu";
 @import "composantes/header";
 @import "composantes/navigation";
+@import "composantes/navigation_categorie_cours";
+//@import "composantes/navigation_accueil";
 @import "composantes/footer";
 @import "composantes/erreur_404";
 @import "composantes/recherche";
 @import "composantes/single-post";
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
