@@ -22,7 +22,7 @@
         if (is_category('video')){ echo "<h3>Cours vidéo</h3>";}
         */
         // retourne un string qui représente le slug de la catégorie
-        $url_categorie_slug = trouve_la_categorie(array('cours','web','jeux-video','creation-video','autres'));
+        $url_categorie_slug = trouve_la_categorie(array('cours','web','jeux-video','creation-video','utilitaire'));
         $ma_categorie = get_category_by_slug($url_categorie_slug);
         echo "<h3>" . $ma_categorie->description . "</h3>  "; 
 
