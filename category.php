@@ -21,6 +21,7 @@
         if (is_category('creation-3d')){ echo "<h3>Cours création 3D</h3>";}
         if (is_category('video')){ echo "<h3>Cours vidéo</h3>";}
         */
+        
         // retourne un string qui représente le slug de la catégorie
         $url_categorie_slug = trouve_la_categorie(array('cours','jeux-video','web','creation-video','utilitaire'));
         $ma_categorie = get_category_by_slug($url_categorie_slug);
