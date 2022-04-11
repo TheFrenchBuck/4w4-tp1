@@ -24,7 +24,7 @@
         // retourne un string qui représente le slug de la catégorie
         $url_categorie_slug = trouve_la_categorie(array('cours','web','jeux-video','creation-video','autres'));
         $ma_categorie = get_category_by_slug($url_categorie_slug);
-        echo "<h3>" . $ma_categorie->description . "</h3>"; 
+        echo "<h3>" . $ma_categorie->description . "</h3>  "; 
 
 
 
