@@ -433,6 +433,22 @@ COMPOSANTES
   flex-wrap: wrap;
 }
 
+.formation__liste .web {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=globe-bold");
+}
+
+.formation__liste .jeux-video {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=games");
+}
+
+.formation__liste .utilitaire {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools-bold");
+}
+
+.formation__liste .creation-video {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=device-camera-video");
+}
+
 .formation__cours {
   background-color: #d1e9ff;
   box-shadow: #394044 1px -1px 10px;
@@ -440,6 +456,8 @@ COMPOSANTES
   margin: 10px;
   display: flex;
   flex-direction: column;
+  background-repeat: no-repeat;
+  background-position: 95% 5%;
   width: 100%;
   padding: 10px;
 }
@@ -649,15 +667,19 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 .menu-categorie_cours-container .menu {
   display: flex;
   list-style-type: none;
+  flex-wrap: wrap;
 }
 
 .menu-categorie_cours-container .menu .menu-item {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
-  margin: 0 15px;
+  margin: 0 15px 15px 0;
   background-color: lightgray;
   border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 65px;
 }
 
 .menu-categorie_cours-container .menu .menu-item a {
@@ -826,6 +848,39 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 .cours section {
   display: flex;
   flex-direction: column;
+}
+
+.menu-accueil-container {
+  margin-top: 20px;
+}
+
+.menu-accueil-container .menu {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  column-gap: 50px;
+}
+
+.menu-accueil-container .menu li {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+  border-radius: 10%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 5em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1em;
+  height: 5em;
+}
+
+.menu-accueil-container .menu li a {
+  text-decoration: none;
 }
 
 /* ---------------------------------------------------------

@@ -23,10 +23,17 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
             
             
 
-             a {
+             
+            a {
                  text-decoration: none;
                  margin: 10px;
              }
+        }
+        .menu-item:hover {
+            background-color: $color__button__backgroung--hover;
+        }
+        .current-menu-item{
+            background-color:  $color__button__backgroung--current;
         }
 
 
