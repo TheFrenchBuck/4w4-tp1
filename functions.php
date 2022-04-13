@@ -123,8 +123,11 @@ function trouve_la_categorie($tableau){
 }
 function cidw_4w4_pre_get_posts(WP_Query $query)
 {
-  if (!is_admin() && is_main_query() && is_category(array('cours','web','jeux-video','creation-video','utilitaire'))) 
-    {
+  if (is_admin() && is_main_query() && is_category(array('cours','web','jeux-video','creation-video','utilitaire'))) 
+{
+    return $query;
+}
+  else{
     //$ordre = get_query_var('ordre');
     $query->set('posts_per_page', -1);
     // $query->set('orderby', $cle);

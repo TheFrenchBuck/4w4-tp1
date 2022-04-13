@@ -2,9 +2,7 @@
 <main class="principal">
     <h1>Programme TIM</h1>
     <section class="formation">
-    <?php  wp_nav_menu(array(
-            "menu"=>"categorie_cours",
-            "container" => "nav"));  ?>
+    <?php  ?>
         <h2 class="formation__titre">Liste des cours du programme TIM</h2>
         <?php 
       

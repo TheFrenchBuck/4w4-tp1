@@ -20,22 +20,21 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
             align-items: center;
             text-align: center;
             width: 65px;
-            
-            
-
-             
             a {
-                 text-decoration: none;
-                 margin: 10px;
-             }
-        }
-        .menu-item:hover {
-            background-color: $color__button__backgroung--hover;
+                text-decoration: none;
+                margin: 10px;
+            }
+            &:hover {
+                background-color: $color__button__backgroung--hover;
+                a {
+                    text-decoration: none;
+                    margin: 10px;
+                }
+            }  
         }
         .current-menu-item{
             background-color:  $color__button__backgroung--current;
         }
-
-
+     
     }
 }
