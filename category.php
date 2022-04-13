@@ -13,8 +13,7 @@
         <a href="<?= esc_url( home_url( '/' ));  ?>/category/<?= $url_categorie_slug ?>/?cletri=title&ordre=asc">Ascendant</a><br>
         <a href="<?= esc_url( home_url( '/' ));  ?>/category/<?= $url_categorie_slug ?>/?cletri=title&ordre=desc">Descendant</a><br>
 
-        <a href="?cletri=title&ordre=asc">Ascendant</a><br>
-        <a href="?cletri=title&ordre=desc">Descendant</a><br>
+        
 
            <?php  wp_nav_menu(array(
                   "menu"=>"categorie_cours",

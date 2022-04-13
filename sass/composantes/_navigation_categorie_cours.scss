@@ -8,6 +8,9 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
         display : flex;
         list-style-type: none;
         flex-wrap: wrap;
+        justify-items: center;
+        align-items: center;
+        
      
         .menu-item { //li
            display: flex;
@@ -20,12 +23,17 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
             align-items: center;
             text-align: center;
             width: 65px;
+            height: 70px;
+            &:first-child{
+                height: 300px;
+                width: 150px;
+            }
             a {
                 text-decoration: none;
                 margin: 10px;
             }
             &:hover {
-                background-color: $color__button__backgroung--hover;
+                background-color: $color__button__background--hover;
                 a {
                     text-decoration: none;
                     margin: 10px;
@@ -33,7 +41,7 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
             }  
         }
         .current-menu-item{
-            background-color:  $color__button__backgroung--current;
+            background-color:  $color__button__background--current;
         }
      
     }

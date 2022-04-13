@@ -43,14 +43,15 @@ function cidw_4w4_add_theme_support()
 add_action( 'after_setup_theme', 'cidw_4w4_add_theme_support' );
 
 /* ----------------------------------------------------------- Ajout de la description dans menu */
-function prefix_nav_description( $item_output, $item,  $args ) {
+function prefix_nav_description( $item_output, $item) {
     if ( !empty( $item->description ) ) {
-        $item_output = str_replace( $args->link_after . '</a>',
-        $args->link_after .'<hr><span class="menu-item-description">' . $item->description . '</span>' .  '</a>',
+        $item_output = str_replace( '</a>',
+        '<hr><span class="menu-item-description">' . $item->description . '</span><div class="menu-item-icone"></div></a>',
               $item_output );
     }
     return $item_output;
 }
+add_filter( 'walker_nav_menu_start_el', 'prefix_nav_description', 10, 2 );
 /*---------------------------------------------------------- Enregistrement des sidebar */
 function my_register_sidebars() {
     /* Register the 'primary' sidebar. */
@@ -147,4 +148,7 @@ function cidw_4w4_query_vars($params){
 }
 add_action('pre_get_posts', 'cidw_4w4_pre_get_posts');
 add_filter('query_vars', 'cidw_4w4_query_vars' );
+/*--------------afficher la description------*/
+
 ?>
+

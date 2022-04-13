@@ -21,6 +21,9 @@
         .accueil__etudiant .menu-item-icone{
             background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
         }
+        .menu-item-description{
+            font-size: 0.5rem;
+        }
         
         li{ //element li
             display: flex;
@@ -35,6 +38,7 @@
             font-family: $font__navAcceuil;
             font-size: 1em;
             height: 5em;
+            
              
                 a{
                 text-decoration: none;
