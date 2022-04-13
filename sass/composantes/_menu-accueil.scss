@@ -49,3 +49,54 @@
       
     }
 }
+.menu-accueil_evenement-container{
+    margin-top: 20px;
+
+    .menu{ //ul
+        display : flex;
+        list-style-type: none;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        column-gap: 50px;
+        .accueil__prof .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=octoface");
+        }
+        .accueil__aide .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
+
+
+        }
+        .accueil__etudiant .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
+        }
+        .menu-item-description{
+            font-size: 0.5rem;
+        }
+        
+        li{ //element li
+            display: flex;
+            flex-direction: column;
+
+            background-color:lightgray ;
+            border-radius: 10%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 5em;
+            font-family: $font__navAcceuil;
+            font-size: 1em;
+            height: 5em;
+            
+             
+                a{
+                text-decoration: none;
+
+                }
+           
+        }
+      
+    }
+}

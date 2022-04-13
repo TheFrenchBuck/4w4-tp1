@@ -10,6 +10,8 @@
 </section>
 <?php wp_nav_menu(array("menu"=>"menu_accueil",
       "container"=>"nav")); ?>
+      <?php wp_nav_menu(array("menu"=>"accueil_evenement",
+      "container"=>"nav")); ?>
  
 
     <h1>Accueil</h1>
