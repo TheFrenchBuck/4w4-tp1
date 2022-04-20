@@ -10,17 +10,8 @@
         padding: 0;
         margin: 0;
         column-gap: 50px;
-        .accueil__prof .menu-item-icone{
-            background-image: url("https://s2.svgbox.net/octicons.svg?ic=octoface");
-        }
-        .accueil__aide .menu-item-icone{
-            background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
-
-
-        }
-        .accueil__etudiant .menu-item-icone{
-            background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
-        }
+        
+     
         .menu-item-description{
             font-size: 0.5rem;
         }
@@ -28,16 +19,20 @@
         li{ //element li
             display: flex;
             flex-direction: column;
-
+            padding: 5px;
             background-color:lightgray ;
             border-radius: 10%;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             text-align: center;
-            width: 5em;
+            width: 9em;
             font-family: $font__navAcceuil;
             font-size: 1em;
-            height: 5em;
+            height: 9em;
+            padding-top: 10px;
+            background-image: url(http://www.pngmart.com/files/5/Square-Frame-PNG-Photo-279x279.png);
+            background-repeat: no-repeat;
+            background-size: 9em;
             
              
                 a{
@@ -49,6 +44,8 @@
       
     }
 }
+
+            /* menu evenement*/
 .menu-accueil_evenement-container{
     margin-top: 20px;
 
@@ -61,17 +58,17 @@
         padding: 0;
         margin: 0;
         column-gap: 50px;
-        .accueil__prof .menu-item-icone{
-            background-image: url("https://s2.svgbox.net/octicons.svg?ic=octoface");
-        }
-        .accueil__aide .menu-item-icone{
-            background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
+        // .accueil__prof .menu-item-icone{
+        //     background-image: url("https://s2.svgbox.net/octicons.svg?ic=octoface");
+        // }
+        // .accueil__aide .menu-item-icone{
+        //     background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
 
 
-        }
-        .accueil__etudiant .menu-item-icone{
-            background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
-        }
+        // }
+        // .accueil__etudiant .menu-item-icone{
+        //     background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
+        // }
         .menu-item-description{
             font-size: 0.5rem;
         }
@@ -79,17 +76,19 @@
         li{ //element li
             display: flex;
             flex-direction: column;
-
+            padding: 5px;
             background-color:lightgray ;
             border-radius: 10%;
             justify-content: center;
             align-items: center;
             text-align: center;
-            width: 5em;
+            width: 9em;
             font-family: $font__navAcceuil;
             font-size: 1em;
-            height: 5em;
-            
+            height: 9em;
+            background-image: url(http://www.pngmart.com/files/5/Square-Frame-PNG-Photo-279x279.png);
+            background-repeat: no-repeat;
+            background-size: 9em;
              
                 a{
                 text-decoration: none;
@@ -99,4 +98,5 @@
         }
       
     }
+
 }

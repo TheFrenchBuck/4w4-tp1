@@ -887,18 +887,6 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   column-gap: 50px;
 }
 
-.menu-accueil-container .menu .accueil__prof .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=octoface");
-}
-
-.menu-accueil-container .menu .accueil__aide .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
-}
-
-.menu-accueil-container .menu .accueil__etudiant .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
-}
-
 .menu-accueil-container .menu .menu-item-description {
   font-size: 0.5rem;
 }
@@ -906,21 +894,27 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 .menu-accueil-container .menu li {
   display: flex;
   flex-direction: column;
+  padding: 5px;
   background-color: lightgray;
   border-radius: 10%;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
-  width: 5em;
+  width: 9em;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1em;
-  height: 5em;
+  height: 9em;
+  padding-top: 10px;
+  background-image: url(http://www.pngmart.com/files/5/Square-Frame-PNG-Photo-279x279.png);
+  background-repeat: no-repeat;
+  background-size: 9em;
 }
 
 .menu-accueil-container .menu li a {
   text-decoration: none;
 }
 
+/* menu evenement*/
 .menu-accueil_evenement-container {
   margin-top: 20px;
 }
@@ -936,18 +930,6 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   column-gap: 50px;
 }
 
-.menu-accueil_evenement-container .menu .accueil__prof .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=octoface");
-}
-
-.menu-accueil_evenement-container .menu .accueil__aide .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
-}
-
-.menu-accueil_evenement-container .menu .accueil__etudiant .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
-}
-
 .menu-accueil_evenement-container .menu .menu-item-description {
   font-size: 0.5rem;
 }
@@ -955,15 +937,19 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 .menu-accueil_evenement-container .menu li {
   display: flex;
   flex-direction: column;
+  padding: 5px;
   background-color: lightgray;
   border-radius: 10%;
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 5em;
+  width: 9em;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1em;
-  height: 5em;
+  height: 9em;
+  background-image: url(http://www.pngmart.com/files/5/Square-Frame-PNG-Photo-279x279.png);
+  background-repeat: no-repeat;
+  background-size: 9em;
 }
 
 .menu-accueil_evenement-container .menu li a {

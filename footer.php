@@ -21,6 +21,11 @@
     <section class="footer__auteur">Auteur : Zachary Arsenault</section>
 </div>
 </footer>
+<div class="boite__modale">
+    <p class="boite__modale__texte">
+            Texte de la boire modale
+        </p>
+</div>
 <?php wp_footer() ?>
 </body>
 </html>

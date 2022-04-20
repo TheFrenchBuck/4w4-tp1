@@ -8,8 +8,10 @@
     <div class="animation__bloc">4</div>
     <div class="animation__bloc">5</div>
 </section>
+    <h3>Le département TIM</h3>
 <?php wp_nav_menu(array("menu"=>"menu_accueil",
       "container"=>"nav")); ?>
+      <h3>Événements</h3>
       <?php wp_nav_menu(array("menu"=>"accueil_evenement",
       "container"=>"nav")); ?>
  
