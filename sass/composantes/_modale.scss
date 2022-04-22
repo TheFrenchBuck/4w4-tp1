@@ -8,7 +8,7 @@
     background-color: rgb(68, 153, 187);
     transform: scale(0);
     transition: all 1s ease-out;
-
+   
     // &--ouvrir {
     //     transform : scale(1)
     // }
@@ -21,3 +21,21 @@
     transform : scale(1)
 
   }
+  .ouvrir:hover{
+    animation:modale 2s infinite;
+    animation-delay: 1s;
+  }
+
+  @keyframes modale {
+    0%,
+    10% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

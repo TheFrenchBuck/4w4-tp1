@@ -972,6 +972,24 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   transform: scale(1);
 }
 
+.ouvrir:hover {
+  animation: modale 2s infinite;
+  animation-delay: 1s;
+}
+
+@keyframes modale {
+  0%,
+  10% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */

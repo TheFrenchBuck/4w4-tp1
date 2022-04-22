@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: evenement
+* Template Name: Évenements
 *
 * @package WordPress
 * @subpackage cidw-4w4
