@@ -23,7 +23,8 @@
 </footer>
 <div class="boite__modale">
     <p class="boite__modale__texte">
-            Texte de la boire modale
+        <?php $descCours = get_the_content(); ?>
+            <?= $descCours ?>
         </p>
 </div>
 <?php wp_footer() ?>

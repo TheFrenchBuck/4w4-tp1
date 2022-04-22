@@ -957,7 +957,7 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 }
 
 .boite__modale {
-  position: absolute;
+  position: fixed;
   width: 50%;
   height: 50%;
   top: 25%;
