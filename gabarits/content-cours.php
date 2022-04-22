@@ -10,7 +10,9 @@
     <?php          
     $titre = get_the_title();
     $titreFiltreCours = substr($titre, 7, -6);
-    $nbHeures = substr($titre, -6); //avant
+    //$nbHeures = substr($titre, -6); //avant
+    $nbHeures = get_field("nombre_dheures"); //ACF
+    $departement = get_field("departement"); //ACF
      
      //$nbHeures = get_field( "nombre_dheures" ); //apres
      //echo $nombre_dheure;
@@ -24,7 +26,8 @@
             <?= $titreFiltreCours; ?>
         </a>
     </h3>
-    <div class="cours__nbre-heure"><?= $nbHeures; ?></div>
+    <div class="cours__nbre-heure"><?= $nbHeures; ?>h</div>
     <p class="cours__sigle"><?= $sigleCours; ?> </p>
     <p class="cours__desc"> <?= wp_trim_words($descCours,12,"<button class='cours__desc__boutton'>Suite</button>"); ?></p>
+    <p class="cours__departement"><?= $departement?></p>
 </article> 
