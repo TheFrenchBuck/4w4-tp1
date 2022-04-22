@@ -963,7 +963,7 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   top: 25%;
   left: 23%;
   border: 5px solid black;
-  background-color: #4499bb;
+  background-color: #b9d9e6;
   transform: scale(0);
   transition: all 1s ease-out;
 }
@@ -984,6 +984,7 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   }
   50% {
     transform: scale(0.95);
+    border: 5px solid azure;
   }
   100% {
     transform: scale(1);

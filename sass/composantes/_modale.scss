@@ -5,7 +5,7 @@
     top: 25%;
     left: 23%;
     border: 5px solid black;
-    background-color: rgb(68, 153, 187);
+    background-color: rgb(185, 217, 230);
     transform: scale(0);
     transition: all 1s ease-out;
    
@@ -34,6 +34,7 @@
 
     50% {
         transform: scale(0.95);
+        border: 5px solid azure;
     }
     100% {
         transform: scale(1);
