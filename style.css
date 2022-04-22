@@ -963,12 +963,12 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   top: 25%;
   left: 23%;
   border: 5px solid black;
-  background-color: red;
-  transform: scale(0.1);
+  background-color: #4499bb;
+  transform: scale(0);
   transition: all 1s ease-out;
 }
 
-.boite__modale:hover {
+.ouvrir {
   transform: scale(1);
 }
 

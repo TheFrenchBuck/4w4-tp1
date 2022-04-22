@@ -5,16 +5,19 @@
     top: 25%;
     left: 23%;
     border: 5px solid black;
-    background-color: red;
-    transform: scale(0.1);
+    background-color: rgb(68, 153, 187);
+    transform: scale(0);
     transition: all 1s ease-out;
-    &:hover{
-        transform: scale(1);
 
-
-    }
+    // &--ouvrir {
+    //     transform : scale(1)
+    // }
 
     .boite__modale__texte{
       
     }
+  }
+  .ouvrir{
+    transform : scale(1)
+
   }
