@@ -14,17 +14,17 @@
     <style></style>
 </head>
 
-<body <?php body_class("site"); ?> style="color:<?= get_theme_mod('background_body') ?>";>
+<body <?php body_class("site"); ?> style="background-color:<?= get_theme_mod('background_body') ?>";>
     <header class="site__header">
         <section class="site__header__titre">
             <div class="logo__titre"> <?php the_custom_logo(); ?></div>
             
-            <h1 class="header__titre" style="background-color:<?= get_theme_mod('background_main')?>">
+            <h1 class="header__titre">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
                     <?php bloginfo('name'); ?>
                 </a>
             </h1>
-            <h2 class="header__description"><?php bloginfo('description'); ?></h2>
+            <h2 style="color:<?= get_theme_mod('description_titre')?>" class="header__description"><?php bloginfo('description'); ?></h2>
         </section>
         <div class="util">
             

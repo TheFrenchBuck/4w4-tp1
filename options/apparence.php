@@ -29,7 +29,7 @@
             "title" => "Modifier le backgroud du body"
         ]);
         $manager->add_setting('background_body', [
-            "default" => "#fffff",
+            "default" => "#78B3E3",
             "sanitize_callback" => "sanitize_hex_color" // permet de valider/filtrer la donnée
         ]);
 
@@ -47,16 +47,16 @@
 
 
         // Deuxieme variabe couleur
-        $manager->add_setting('background_main', [
-            "default" => "#fffff",
+        $manager->add_setting('description_titre', [
+            "default" => "#f06a6a",
             "sanitize_callback" => "sanitize_hex_color" // permet de valider/filtrer la donnée
 
 
         ]);
 
-        $manager->add_control(new WP_Customize_Color_Control($manager, "background_main", [
+        $manager->add_control(new WP_Customize_Color_Control($manager, "description_titre", [
             "section" => "modifier_background_body",
-            "label" => "Couleur du couleur titre" //l'étiquette de la variable dans le formulaire  ]));
+            "label" => "Couleur de description titre" //l'étiquette de la variable dans le formulaire  ]));
 
         ]));
     });
