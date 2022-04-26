@@ -11,14 +11,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head() ?>
     <?php show_admin_bar(true); ?>
+    <style></style>
 </head>
 
-<body <?php body_class("site"); ?>>
+<body <?php body_class("site"); ?> style="color:<?= get_theme_mod('background_body') ?>";>
     <header class="site__header">
         <section class="site__header__titre">
             <div class="logo__titre"> <?php the_custom_logo(); ?></div>
             
-            <h1 class="header__titre">
+            <h1 class="header__titre" style="background-color:<?= get_theme_mod('background_main')?>">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
                     <?php bloginfo('name'); ?>
                 </a>

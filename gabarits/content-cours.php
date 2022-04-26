@@ -20,6 +20,10 @@
     $descCours = get_the_excerpt();
     $descCours = get_the_content();
     ?>
+        <code class="cours__invisible">
+           <?php $descCours ?> 
+        </code>
+
     <?php the_post_thumbnail("thumbnail"); ?>
     <h3 class="cours__titre">
         <a href="<?php echo get_permalink(); ?>">

@@ -496,6 +496,10 @@ COMPOSANTES
   font-size: 1rem;
 }
 
+.cours__invisible {
+  display: none;
+}
+
 .site__header {
   background-color: #6faee2;
   color: #040629;
@@ -989,6 +993,10 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   100% {
     transform: scale(1);
   }
+}
+
+.boite__modale__ferme {
+  background-color: red;
 }
 
 /* ---------------------------------------------------------

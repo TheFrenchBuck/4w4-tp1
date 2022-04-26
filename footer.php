@@ -22,6 +22,7 @@
 </div>
 </footer>
 <div class="boite__modale">
+    <button class="boite__modale__ferme">x</button>
     <p class="boite__modale__texte">
         <?php $descCours = get_the_content(); ?>
             <?= $descCours ?>

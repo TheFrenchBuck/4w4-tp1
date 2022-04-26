@@ -12,7 +12,7 @@
     // &--ouvrir {
     //     transform : scale(1)
     // }
-
+     
     .boite__modale__texte{
       
     }
@@ -39,4 +39,7 @@
     100% {
         transform: scale(1);
     }
+}
+.boite__modale__ferme{
+  background-color: red;
 }
