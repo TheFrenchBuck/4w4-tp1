@@ -41,6 +41,8 @@ COMPOSANTES
 @import "composantes/single-post";
 @import "composantes/menu-accueil";
 @import "composantes/modale";
+@import "composantes/evenement";
+
 
 
 /* ---------------------------------------------------------
@@ -48,6 +50,8 @@ ANIMATION
 --------------------------------------------------------- */
 @import "animation/entete";
 @import"animation/baspage"; 
+@import"animation/burger"; 
+
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */

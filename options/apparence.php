@@ -59,6 +59,19 @@
             "label" => "Couleur de description titre" //l'étiquette de la variable dans le formulaire  ]));
 
         ]));
+        // troisieme variabe couleur
+        $manager->add_setting('background_secondaire', [
+            "default" => "#f06a6a",
+            "sanitize_callback" => "sanitize_hex_color" // permet de valider/filtrer la donnée
+
+
+        ]);
+
+        $manager->add_control(new WP_Customize_Color_Control($manager, "background_secondaire", [
+            "section" => "modifier_background_body",
+            "label" => "Couleur de background_secondaire" //l'étiquette de la variable dans le formulaire  ]));
+
+        ]));
     });
 
     ?>

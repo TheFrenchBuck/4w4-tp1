@@ -1,36 +1,37 @@
 .site__header {
-  
+
   background-color: $color__background-header;
   color: $color__font-header;
   padding-left: 10px;
-  display : flex;
+  display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   padding-left: 32px;
-  @media screen and (min-width : 700px){
+
+  @media screen and (min-width : 700px) {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     padding-left: 10px;
     //row-gap: 1100px;
-    
-    .site__header__titre{
+
+    .site__header__titre {
       display: flex;
       flex-direction: row;
-    
+
       justify-content: space-between;
       align-items: center;
-      
+
     }
-   
-      
-    
+
+
+
 
   }
 
-  &header__titre{
-     font-size: clamp(10rem, 5vw, 6rem);
+  &header__titre {
+    font-size: clamp(10rem, 5vw, 6rem);
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -38,70 +39,77 @@
     font-family: $font__titre;
     // flex-direction: row;
     margin-left: 10px;
-    @media screen and (min-width:700px){
+
+    @media screen and (min-width:700px) {
       margin: 50px;
     }
-  
 
-    .logo__titre{
 
-      @media screen and (max-width : 699px){
-      display: flex;
-      justify-content: center;
-      
-      // margin: auto;
-      // padding: 0;
-      
-      
+    .logo__titre {
+
+      @media screen and (max-width : 699px) {
+        display: flex;
+        justify-content: center;
+
+        // margin: auto;
+        // padding: 0;
+
+
       }
 
-      
-    
+
+
     }
-    
-    @media screen and (min-width : 700px){
+
+    @media screen and (min-width : 700px) {
       flex-wrap: nowrap;
 
-      
+
     }
-    
+
   }
 
 }
-.custom-logo-link, .header__titre,.header__description {
 
-}
+.custom-logo-link,
+.header__titre,
+.header__description {}
 
 .header__description {
-    font-size: clamp(0.8rem, 1vw, 6rem);
-    font-family: $font__main;
-    margin-left: 10px;
-    @media screen and (min-width:700px){
-      margin: 10px;
-    }
+  font-size: clamp(0.8rem, 1vw, 6rem);
+  font-family: $font__main;
+  margin-left: 10px;
+
+  @media screen and (min-width:700px) {
+    margin: 10px;
+  }
 }
 
 .util {
 
-    display : flex;
-    flex-direction : column;
-    width: 90%;
-    text-align: center;
-    .recherche{
-      margin-bottom: 20px;
-      @media screen and (min-width:700px){
-        margin-bottom: 0px;
-      }
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  text-align: center;
+
+  .recherche {
+    margin-bottom: 20px;
+
+    @media screen and (min-width:700px) {
+      margin-bottom: 0px;
     }
-  @media screen and (min-width:700px){
-    width:300px;
-    margin-left : auto;
+  }
+
+  @media screen and (min-width:700px) {
+    width: 300px;
+    margin-left: auto;
     margin-right: 20px;
   }
-    &__menu{
-      display : flex; 
-      margin-bottom: 10px;
-    }
 
-
+  &__menu {
+    display: flex;
+    margin-bottom: 10px;
   }
+
+
+}
