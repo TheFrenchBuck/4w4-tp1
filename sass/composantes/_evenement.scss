@@ -6,8 +6,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding-bottom: 20px;
     // row-gap: 50px;
     // column-gap:50px;
+    font-size: 1.2rem;
     h1{    
      width: 100%;
      margin-bottom: 25px;
@@ -35,6 +37,7 @@
         width: 100%;
 
         .resume{
+            max-width: 90%;
 
         }
     }
@@ -49,6 +52,11 @@
     .evenement__date{
         width: 15%;
         border: 3px solid black;
+        background-color:  rgba(57, 144, 170, 0.548);
+        box-shadow: 5px 10px 5px gray;
+        min-width: 75px;
+
+
         .date{
             padding-left: 5px;
 
@@ -63,6 +71,11 @@
         width: 15%;
         border: 3px solid black;
         border-left: none;
+        background-color:  rgba(57, 144, 170, 0.548);
+        box-shadow: 5px 10px 5px gray;
+        min-width: 85px;
+
+
 
         .heure{
             padding-left: 5px;
@@ -76,11 +89,18 @@
         }
     }
     .evenement__endroit{
-        max-width: 60%;
+        
+        width: 60%;
+        min-width: 50px;
         border: 3px solid black;
         border-left: none;
+        background-color:  rgba(57, 144, 170, 0.548);
+        box-shadow: 5px 10px 5px gray;
+
         .endroit{
             padding-left: 5px;
+            padding-right: 5px;
+            
 
         }
         h3{

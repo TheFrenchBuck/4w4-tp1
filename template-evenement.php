@@ -21,7 +21,7 @@
           <!-- evenement__resume -->
           <section class="evenement__resume">
           <h3>Résumé</h3>
-          <p class="resume">  <?php the_field('resume'); ?></p>
+          <div class="resume">  <?php the_field('resume'); ?> </div>
           </section>
 
           <!-- evenement__organisateur -->
