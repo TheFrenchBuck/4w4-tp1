@@ -798,6 +798,20 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   color: #19e123;
 }
 
+#menu-lien_externe {
+  list-style: armenian;
+  height: auto;
+}
+
+#menu-lien_externe li {
+  font-size: 1.3rem;
+  margin-top: 15px;
+}
+
+#menu-lien_externe li:first-of-type {
+  margin-top: 0;
+}
+
 /*
 
 .site__footer {
@@ -892,7 +906,7 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 }
 
 .menu-accueil-container .menu .menu-item-description {
-  font-size: 0.5rem;
+  font-size: 0.85rem;
 }
 
 .menu-accueil-container .menu li {
@@ -904,18 +918,26 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  width: 9em;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1em;
-  height: 9em;
+  height: 10em;
+  width: 10em;
+  transform: scale(1);
+  transition: all .3s ease-in-out;
   padding-top: 10px;
   background-image: url(http://www.pngmart.com/files/5/Square-Frame-PNG-Photo-279x279.png);
   background-repeat: no-repeat;
-  background-size: 9em;
+  background-size: 10em;
 }
 
 .menu-accueil-container .menu li a {
   text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.2rem;
+}
+
+.menu-accueil-container .menu li:hover {
+  transform: scale(1.2);
 }
 
 /* menu evenement*/
@@ -947,17 +969,26 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 9em;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1em;
-  height: 9em;
+  height: 10em;
+  width: 10em;
+  padding-top: 10px;
   background-image: url(http://www.pngmart.com/files/5/Square-Frame-PNG-Photo-279x279.png);
   background-repeat: no-repeat;
-  background-size: 9em;
+  background-size: 10em;
+  transform: scale(1);
+  transition: all .3s ease-in-out;
 }
 
 .menu-accueil_evenement-container .menu li a {
   text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.2rem;
+}
+
+.menu-accueil_evenement-container .menu li:hover {
+  transform: scale(1.2);
 }
 
 .boite__modale {

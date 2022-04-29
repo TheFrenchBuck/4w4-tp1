@@ -58,6 +58,11 @@
       gap: 2rem;
     }
     .footer__lien{
+      
+
+
+
+
       #block-20{
         display: none;
         padding-left: 25px;
@@ -110,6 +115,8 @@
       
     }
   }
+
+  
 }
 
 
@@ -118,7 +125,20 @@
 
 
 
-
+#menu-lien_externe{
+  list-style: armenian;
+  
+  // padding-bottom: 50px;
+  height: auto;
+  
+  li{
+    font-size: 1.3rem;
+    margin-top: 15px;
+  }
+  li:first-of-type{
+    margin-top: 0;
+  }
+}
 
 
 

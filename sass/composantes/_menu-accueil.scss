@@ -1,8 +1,9 @@
-.menu-accueil-container{
+.menu-accueil-container {
     margin-top: 20px;
 
-    .menu{ //ul
-        display : flex;
+    .menu {
+        //ul
+        display: flex;
         list-style-type: none;
         flex-wrap: wrap;
         justify-content: flex-start;
@@ -10,47 +11,60 @@
         padding: 0;
         margin: 0;
         column-gap: 50px;
-        
-     
-        .menu-item-description{
-            font-size: 0.5rem;
+
+
+        .menu-item-description {
+            font-size: 0.85rem;
         }
-        
-        li{ //element li
+
+        li {
+            //element li
             display: flex;
             flex-direction: column;
             padding: 5px;
-            background-color:lightgray ;
+            background-color: lightgray;
             border-radius: 10%;
             justify-content: flex-start;
             align-items: center;
             text-align: center;
-            width: 9em;
             font-family: $font__navAcceuil;
             font-size: 1em;
-            height: 9em;
+            height: 10em;
+            width: 10em;
+            transform: scale(1);
+            transition: all .3s ease-in-out;
+
             padding-top: 10px;
             background-image: url(http://www.pngmart.com/files/5/Square-Frame-PNG-Photo-279x279.png);
             background-repeat: no-repeat;
-            background-size: 9em;
-            
-             
-                a{
-                text-decoration: none;
+            background-size: 10em;
 
-                }
-           
+
+            a {
+                text-decoration: none;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 1.2rem;
+
+            }
+
         }
-      
+
+        li:hover {
+
+            transform: scale(1.2);
+
+        }
+
     }
 }
 
-            /* menu evenement*/
-.menu-accueil_evenement-container{
+/* menu evenement*/
+.menu-accueil_evenement-container {
     margin-top: 20px;
 
-    .menu{ //ul
-        display : flex;
+    .menu {
+        //ul
+        display: flex;
         list-style-type: none;
         flex-wrap: wrap;
         justify-content: flex-start;
@@ -69,34 +83,51 @@
         // .accueil__etudiant .menu-item-icone{
         //     background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
         // }
-        .menu-item-description{
+        .menu-item-description {
             font-size: 0.5rem;
         }
-        
-        li{ //element li
+
+        li {
+            //element li
             display: flex;
             flex-direction: column;
             padding: 5px;
-            background-color:lightgray ;
+            background-color: lightgray;
             border-radius: 10%;
             justify-content: center;
             align-items: center;
             text-align: center;
-            width: 9em;
             font-family: $font__navAcceuil;
             font-size: 1em;
-            height: 9em;
+            height: 10em;
+            width: 10em;
+
+
+            padding-top: 10px;
             background-image: url(http://www.pngmart.com/files/5/Square-Frame-PNG-Photo-279x279.png);
             background-repeat: no-repeat;
-            background-size: 9em;
-             
-                a{
-                text-decoration: none;
+            background-size: 10em;
+            transform: scale(1);
+            transition: all .3s ease-in-out;
 
-                }
-           
+
+            a {
+                text-decoration: none;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 1.2rem;
+
+
+            }
+
         }
-      
+
+        li:hover {
+
+            transform: scale(1.2);
+
+        }
+
+
     }
 
 }
