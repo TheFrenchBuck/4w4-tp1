@@ -1,11 +1,35 @@
-<?php 
+<?php
 require_once("options/apparence.php");
-function cidw_4w4_enqueue(){
-    //wp_enqueue_style('style_css', get_stylesheet_uri());
-    wp_enqueue_style('4w4-le-style', get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'), false);
-    wp_enqueue_script('4w4-boite_modale', get_template_directory_uri() . '/javascript/boite-modale.js', array(), filemtime(get_template_directory() . '/javascript/boite-modale.js'), true);
-    wp_enqueue_script('4w4-burger', get_template_directory_uri() . '/javascript/burger.js', array(), filemtime(get_template_directory() . '/javascript/burger.js'), true);
 
+
+    
+
+function cidw_4w4_enqueue(){
+   //wp_enqueue_style('style_css', get_stylesheet_uri());
+    wp_enqueue_style('cidw_4w4-le-style', 
+                        get_template_directory_uri() . '/style.css', 
+                        array(), 
+                        filemtime(get_template_directory() . '/style.css'), 
+                        false);
+
+    wp_register_script('cidw_4w4-boite-modale', 
+                    get_template_directory_uri() . '/javascript/boite-modale.js',
+                    array(),
+                    filemtime(get_template_directory() . '/javascript/boite-modale.js'),
+                    true);                
+
+    wp_register_script('cidw_4w4-carrousel', 
+                        get_template_directory_uri() . '/javascript/carrousel.js',
+                        array(),
+                        filemtime(get_template_directory() . '/javascript/carrousel.js'),
+                        true);   
+
+    if (is_category('cours')){
+    wp_enqueue_script('cidw_4w4-boite-modale');                   
+    }
+    if (is_front_page()){
+    wp_enqueue_script('cidw_4w4-carrousel');   
+    }                                    
 }
 
 add_action("wp_enqueue_scripts", "cidw_4w4_enqueue");
@@ -130,20 +154,30 @@ function trouve_la_categorie($tableau){
 }
 function cidw_4w4_pre_get_posts(WP_Query $query)
 {
-  if (is_admin() && is_main_query() && is_category(array('cours','web','jeux-video','creation-video','utilitaire'))) 
-{
-    return $query;
-}
-  else{
-    //$ordre = get_query_var('ordre');
-    $query->set('posts_per_page', -1);
-    // $query->set('orderby', $cle);
-    $query->set('orderby', 'title');
-    // $query->set('order',  $ordre);
-    $query->set('order',  'ASC');
-    // var_dump($query);
-    // die();
-   }
+    if (
+        is_admin() 
+        ||  !$query->is_main_query()
+        ||  !!$query->is_category(array('cours', 'web', 'jeux-video', 'creation-video', 'utilitaire'))
+    ) 
+    {
+        return $query;
+    } else {
+        //$ordre = get_query_var('ordre');
+        //$query->set('posts_per_page', -1);
+        // $query->set('orderby', $cle);
+        // $query->set('orderby', 'title');
+        // $query->set('order',  $ordre);
+        //$query->set('order',  'ASC');
+        // var_dump($query);
+        // die();
+
+        $cle = get_query_var('cletri', 'title');
+        $ordre = get_query_var('ordre', 'asc');
+        $query->set('order',  $ordre);
+        $query->set('orderby', $cle);
+        $query->set('postperpage', '-1');
+        return $query;
+    }
 }
 function cidw_4w4_query_vars($params){
     $params[] = "cletri";
@@ -154,6 +188,4 @@ function cidw_4w4_query_vars($params){
 }
 add_action('pre_get_posts', 'cidw_4w4_pre_get_posts');
 add_filter('query_vars', 'cidw_4w4_query_vars' );
-/*--------------afficher la description------*/
-
 ?>

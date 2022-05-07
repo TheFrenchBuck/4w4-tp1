@@ -12,16 +12,17 @@
     $titreFiltreCours = substr($titre, 7, -6);
     //$nbHeures = substr($titre, -6); //avant
     $nbHeures = get_field("nombre_dheures"); //ACF
+    
     $departement = get_field("departement"); //ACF
      
      //$nbHeures = get_field( "nombre_dheures" ); //apres
      //echo $nombre_dheure;
     $sigleCours = substr($titre, 0, 7);
-    $descCours = get_the_excerpt();
+    // $descCours = get_the_excerpt();
     $descCours = get_the_content();
     ?>
         <code class="cours__invisible">
-           <?php $descCours ?> 
+           <?= $descCours ?> 
         </code>
 
     <?php the_post_thumbnail("thumbnail"); ?>

@@ -5,19 +5,21 @@
     <?php  ?>
         <h2 class="formation__titre">Liste des cours du programme TIM</h2>
         <?php 
+            wp_nav_menu(array(
+            "menu"=>"categorie_cours",
+            "container" => "nav"));  
       
         // retourne un string qui représente le slug de la catégorie
         $url_categorie_slug = trouve_la_categorie(array('cours','web','jeux-video','creation-video','utilitaire'));?>
+        <?php  $ordre = get_query_var('ordre', 'asc');?>
         
+        <!-- <a href=" esc_url( home_url( '/' ));  ?>/category/ $url_categorie_slug ?>/?cletri=title&ordre=asc">Ascendant</a><br> -->
+        <!-- <a href="= esc_url( home_url( '/' ));  ?>/category/<$url_categorie_slug ?>/?cletri=title&ordre=desc">Descendant</a><br> -->
+            <a href="?cletri=title&ordre=asc">Ascendant</a><br>
+            <a href="?cletri=title&ordre=desc">Descendant</a><br>
         
-        <a href="<?= esc_url( home_url( '/' ));  ?>/category/<?= $url_categorie_slug ?>/?cletri=title&ordre=asc">Ascendant</a><br>
-        <a href="<?= esc_url( home_url( '/' ));  ?>/category/<?= $url_categorie_slug ?>/?cletri=title&ordre=desc">Descendant</a><br>
 
-        
-
-           <?php  wp_nav_menu(array(
-                  "menu"=>"categorie_cours",
-                  "container" => "nav"));  ?>
+         
 
        <?php  
         $ma_categorie = get_category_by_slug($url_categorie_slug);

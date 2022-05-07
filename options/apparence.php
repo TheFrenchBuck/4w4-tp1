@@ -1,4 +1,4 @@
- <?php
+<?php
     /**
      * Le hook : 'customize_register' qui sera utilisé dans le l'écouteur add_action()
      *La fonction de rappel : function(WP_Customizer_Manager, $manager)
@@ -73,6 +73,4 @@
 
         ]));
     });
-
-    ?>
-
+?>

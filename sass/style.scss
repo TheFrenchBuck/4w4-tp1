@@ -30,11 +30,13 @@ INITIALISATION
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
+
+@import "composantes/accueil";
 @import "composantes/contenu";
 @import "composantes/header";
 @import "composantes/navigation";
 @import "composantes/navigation_categorie_cours";
-//@import "composantes/navigation_accueil";
+//@import "composantes/navigation_accueil"; 
 @import "composantes/footer";
 @import "composantes/erreur_404";
 @import "composantes/recherche";
@@ -42,15 +44,14 @@ COMPOSANTES
 @import "composantes/menu-accueil";
 @import "composantes/modale";
 @import "composantes/evenement";
-
-
+@import "composantes/galerie";
 
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
 @import "animation/entete";
-@import"animation/baspage"; 
-@import"animation/burger"; 
+@import"animation/baspage";
+@import"animation/burger";
 
 /* ---------------------------------------------------------
 LAYOUT

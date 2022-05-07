@@ -5,6 +5,7 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,17 +13,25 @@
     <?php wp_head() ?>
     <?php show_admin_bar(true); ?>
     <style>
-        .home::after{
-            background-color: <?= get_theme_mod('background_secondaire') ?>;
+        .home::after {
+            background-color: <?=get_theme_mod('background_secondaire') ?>;
         }
+
+        
+        .site{
+             background-color: <?= get_theme_mod('background_secondaire') ?>
+            
+        }
+
+
     </style>
 </head>
 
-<body <?php body_class("site"); ?> style="background-color:<?= get_theme_mod('background_body') ?>";>
+<body <?php body_class("site"); ?> style="background-color:<?= get_theme_mod('background_body') ?>" ;>
     <header class="site__header">
         <section class="site__header__titre">
             <div class="logo__titre"> <?php the_custom_logo(); ?></div>
-            
+
             <h1 class="header__titre">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
                     <?php bloginfo('name'); ?>
@@ -31,19 +40,19 @@
             <h2 style="color:<?= get_theme_mod('description_titre')?>" class="header__description"><?php bloginfo('description'); ?></h2>
         </section>
         <div class="util">
-            
-               
-                <?php get_sidebar( 'entete_1' ); ?>
-            
+
+
+            <?php get_sidebar( 'entete_1' ); ?>
+
             <?php get_search_form(); ?>
-            
+
             <!-- form recherche -->
         </div>
-        
+
     </header>
     <section class="site__barre">
         <input type="checkbox" id="chk-burger">
-        <label for="chk-burger"  class="burger">
+        <label for="chk-burger" id="burger" class="burger">
             <!-- <svg width="32px" height="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                 color="#ddd">
                 <path fill-rule="evenodd"

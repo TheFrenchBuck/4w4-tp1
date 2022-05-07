@@ -24,6 +24,8 @@
     grid-area: main;
     background-color: rgba($color__background-main, 0.5);
     padding: 10px 15px 10px 15px;
+    display : flex;
+    flex-direction : column;
 
 }
 
@@ -61,6 +63,7 @@
     clip-path: polygon(85% 0, 100% 0, 100% 100%, 52% 100%);
     background-color: $color__background-body-clip;
     z-index: -1;
+    height : 150vh;
 }
 
 @media screen and (min-width : $largeur__media--tablette)

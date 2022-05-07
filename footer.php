@@ -22,12 +22,19 @@
 </div>
 </footer>
 <div class="boite__modale">
+    <h2 class="boite__modale__titre">Tout savoir</h2>
     <button class="boite__modale__ferme">x</button>
-    <p class="boite__modale__texte">
-        <?php $descCours = get_the_content(); ?>
-            <?= $descCours ?>
-        </p>
+    <article class="boite__modale__texte"></article>
+
+     
+        <!-- $descCours = get_the_content();
+        = $descCours -->
 </div>
-<?php wp_footer() ?>
+<div class="boite__carrousel">
+    <button class="boite__carrousel__ferme">X</button>
+    <section class="boite__carrousel__navigation"></section>
+</div>
+
+<?php wp_footer(); ?>
 </body>
 </html>
