@@ -413,6 +413,15 @@ COMPOSANTES
   align-items: center;
 }
 
+@media screen and (max-width: 700px) {
+  .home .site__main {
+    align-items: center;
+    padding-right: 0;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+  }
+}
+
 .site__main {
   background-color: #d5e6f1;
   border-radius: 5px;
@@ -913,9 +922,9 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   flex-wrap: wrap;
   justify-content: flex-start;
   height: auto;
-  padding: 0;
   margin: 0;
   column-gap: 50px;
+  row-gap: 50px;
 }
 
 .menu-accueil-container .menu .menu-item-description {
@@ -953,6 +962,14 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   transform: scale(1.2);
 }
 
+@media screen and (max-width: 700px) {
+  .menu-accueil_evenement-container .menu {
+    row-gap: 50px;
+    justify-content: center;
+    margin: 0;
+  }
+}
+
 /* menu evenement*/
 .menu-accueil_evenement-container {
   margin-top: 20px;
@@ -964,9 +981,9 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   flex-wrap: wrap;
   justify-content: flex-start;
   height: auto;
-  padding: 0;
   margin: 0;
   column-gap: 50px;
+  row-gap: 50px;
 }
 
 .menu-accueil_evenement-container .menu .menu-item-description {

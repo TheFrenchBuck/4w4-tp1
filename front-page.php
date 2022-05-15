@@ -8,6 +8,14 @@
     <div class="animation__bloc">4</div>
     <div class="animation__bloc">5</div>
 </section>
+<h1>Accueil</h1>
+    
+    <?php if (have_posts()): the_post(); ?>
+         <?php the_title() ?>
+         <?php the_content() ?>   
+   
+    <?php endif ?>
+    
     <h3>Le département TIM</h3>
 <?php wp_nav_menu(array("menu"=>"menu_accueil",
       "container"=>"nav")); ?>
@@ -16,12 +24,7 @@
       "container"=>"nav")); ?>
  
 
-    <h1>Accueil</h1>
-   <?php if (have_posts()): the_post(); ?>
-        <?php the_title() ?>
-        <?php the_content() ?>   
-  
-   <?php endif ?>
+ 
    
 </main>
 <?php get_footer() ?>

@@ -1,3 +1,16 @@
 .home .site__main {
     align-items: center;
+   
+
+
+}
+@media screen and (max-width : $largeur__media--tablette){    
+    .home .site__main {
+        align-items: center;
+        
+        padding-right: 0;
+        padding-left: 12.5%;
+        padding-right: 12.5%;
+    
+    }
 }
