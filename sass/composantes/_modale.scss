@@ -2,7 +2,7 @@
 .boite__carrousel {
     position: fixed;
     width: 50%;
-    height:auto;
+    height:50vh;
     top: 25%;
     left: 23%;
     border: 5px solid black;
@@ -39,17 +39,21 @@
     
     top:25%;
     left:25%;
+    height: auto;
+    //overflow: hidden;
+
     &__texte
     {
-        margin-top: 40px;
+        height: 50vh;
+      //  margin-top: 40px;
         margin-left: 10px;
         margin-right: 10px;
-        margin-bottom: 40px;
-
+      //  margin-bottom: 40px;
         letter-spacing: 3px;
         line-height: 2rem;
-        overflow: hidden;
+        overflow-y: scroll;
     }
+    &__texte::-webkit-scrollbar { display: none; }
     &__titre{
         text-align: center;
     }
