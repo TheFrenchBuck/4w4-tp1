@@ -1,11 +1,49 @@
 .atelier{
- 
-    .atelier__description{
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    span{
+        font-weight: bold;
+    }
+    .atelier__desc{
+        display: flex;
+       flex-direction: column;
+       
+        
+        
+        .description{
+            margin-bottom: 20px;
+
+        }
+        .local{
+            margin-bottom: 20px;
+        }
+        .animateur{
+            margin-bottom: 20px;
+
+        }
 
     }
-    .atelier__horaire{
+    
+
+
+    &__horaire{
+        div{
+            margin-bottom: 20px;
+        }
         
     }
+    h1{    
+        width: 100%;
+        margin-bottom: 25px;
+       }
+       h3{
+           font-size: 1.5rem;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       }
 
 
 
