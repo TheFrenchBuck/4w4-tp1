@@ -21,7 +21,14 @@
       "container"=>"nav")); ?>
       <h3>Événements</h3>
       <?php wp_nav_menu(array("menu"=>"accueil_evenement",
-      "container"=>"nav")); ?>
+      "container"=>"nav")); 
+      ?>
+      <h3>Les ateliers</h3>
+      <?php wp_nav_menu(array("menu"=>"accueil_atelier",
+      "container"=>"nav")); 
+      ?>
+
+
  
 
  
