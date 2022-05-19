@@ -33,12 +33,9 @@
               <div class="heurDebutFin">
                   L'horaire: De <span><?php the_field('heure_de_debut');?></span> à <span><?php the_field('heure_de_fin');?></span> 
                 </div> 
+                <image src="<?php the_field('iconimage');?>" alt="image non disponible">  
           </section>
-
-
-
-
-
+         
 
      </article>
      <?php endif ?>
